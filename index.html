@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Simple GitHub Pages site" />
+  <title>Your Name — GitHub Pages</title>
+
+  <!-- Simple, embedded styles (easy to customize) -->
+  <style>
+    :root{
+      --max-w: 900px;
+      --accent: #0b5cff;
+      --muted: #666;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    body{margin:0;padding:2rem;display:flex;justify-content:center;line-height:1.5;}
+    .wrap{max-width:var(--max-w);width:100%;}
+    header{margin-bottom:1.6rem;}
+    nav{display:flex;gap:1rem;flex-wrap:wrap;margin-top:.5rem;}
+    a{color:var(--accent);text-decoration:none;}
+    a:hover{text-decoration:underline;}
+    h1{margin:0;font-size:clamp(1.6rem,3vw,2.4rem);}
+    .lead{color:var(--muted);margin-top:.4rem;}
+    .card{padding:1rem;border-radius:8px;border:1px solid #eee;background:#fff;margin-top:1rem;}
+    footer{margin-top:2rem;color:var(--muted);font-size:.9rem;}
+    @media (prefers-color-scheme: dark){
+      body{background:#0f1720;color:#e6eef8;}
+      .card{border-color:#1f2a38;background:#0b1220;}
+      :root{--muted:#9aa7bf}
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap" role="main">
+    <header>
+      <h1>Your Name</h1>
+      <div class="lead">A tiny GitHub Pages site — built with a single <code>index.html</code>.</div>
+
+      <nav aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </header>
+
+    <section id="about" class="card" aria-labelledby="about-heading">
+      <h2 id="about-heading">About</h2>
+      <p>This is a minimal static page suitable for GitHub Pages. Edit this file, push to your repo, and your site will be live.</p>
+    </section>
+
+    <section id="projects" class="card" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
+      <ul>
+        <li><strong>Project A</strong> — short description.</li>
+        <li><strong>Project B</strong> — short description.</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="card" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+    </section>
+
+    <footer>
+      <div>Made with ❤️ · <small>Hosted on GitHub Pages</small></div>
+    </footer>
+  </main>
+</body>
+</html>
