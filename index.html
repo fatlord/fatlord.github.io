@@ -17,13 +17,13 @@
     body{margin:0;padding:2rem;display:flex;justify-content:center;line-height:1.5;}
     .wrap{max-width:var(--max-w);width:100%;}
     header{margin-bottom:1.6rem;}
-    nav{display:flex;gap:1rem;flex-wrap:wrap;margin-top:.5rem;}
+    nav{display:flex;justify-content: center;gap:1rem;flex-wrap:wrap;margin-top:.5rem;}
     a{color:var(--accent);text-decoration:none;}
     a:hover{text-decoration:underline;}
     h1{margin:0;font-size:clamp(1.6rem,3vw,2.4rem);}
     .lead{color:var(--muted);margin-top:.4rem;}
     .card{padding:1rem;border-radius:8px;border:1px solid #eee;background:#fff;margin-top:1rem;}
-    footer{margin-top:2rem;color:var(--muted);font-size:.9rem;}
+    footer{margin-top:2rem;text-align: center;color:var(--muted);font-size:.9rem;}
     @media (prefers-color-scheme: dark){
       body{background:#0f1720;color:#e6eef8;}
       .card{border-color:#1f2a38;background:#0b1220;}
@@ -40,7 +40,7 @@
       
       
      
-      <div style="text-align: center;">
+    
       <nav aria-label="Primary">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
@@ -48,7 +48,7 @@
         
         
       </nav>
-      </div>
+      
     </header>
 
     <section id="about" class="card" aria-labelledby="about-heading">
